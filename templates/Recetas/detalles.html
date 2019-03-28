@@ -1,0 +1,51 @@
+{% extends "frame.html" %}
+{% block title %}El recetario | {{ receta.nombre }}{% endblock title %}
+
+{% block activeIngredientes %}active{% endblock activeIngredientes %}
+
+{% block content %}
+<div class="container" style="margin-top: 7%">
+  <div style="display: inline-block">
+    <img src="{{ receta_pic.imagen.url }}" alt="{{ receta.nombre }}" class="img-thumbnail" width="450" height="450">
+  </div>
+  <div style="display: inline-block; vertical-align: top; width: 55%;">
+    <table class="table table-bordered">
+      <tr>
+        <td>Nombre</td>
+        <td>{{ receta.nombre }}</td>
+      </tr>
+      <tr>
+        <td>Primer Ingrediente</td>
+        <td>{{ receta.ingrediente1 }}</td>
+      </tr>
+      <tr>
+        <td>Segundo Ingrediente</td>
+        <td>{{ receta.ingrediente2 }}</td>
+      </tr>
+      {% if receta.ingrediente3 %}
+        <tr>
+          <td>Tercer Ingrediente</td>
+          <td>{{ receta.ingrediente3 }}</td>
+        </tr>
+      {% endif %}
+      {% if receta.ingrediente4 %}
+        <tr>
+          <td>Cuarto Ingrediente</td>
+          <td>{{ receta.ingrediente4 }}</td>
+        </tr>
+      {% endif %}
+      <tr>
+        <td>Preparación</td>
+        <td>{{ receta.preparacion }}</td>
+      </tr>
+      <tr>
+        <td>Publicado por</td>
+        <td>{{ receta.Usuario }}</td>
+      </tr>
+    </table>
+    <a class="btn btn-danger" href="{% url 'recetas:delete' receta.id %}" style="float: right">
+      Eliminar
+    </a>
+  </div>
+</div>
+{% endblock content %}
