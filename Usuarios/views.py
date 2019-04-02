@@ -79,3 +79,8 @@ def cerrar_sesion(request):
   logout(request)
 
   return HttpResponseRedirect(reverse('usuarios:inicio'))
+
+
+def menuPrincipalAdmin(request):
+
+  return render(request, 'Usuarios/loginFake.html')
