@@ -27,3 +27,17 @@ python3 manage.py runserver
 
 Espero les sea de ayuda este proyecto.
 Pablo Miranda Á.
+
+--------------------------------------------------------------------------------------------------------------------------
+Instrucciones para ejecutar en Windows10:
+Hay que instalar Python3, pip y Virtualenv
+
+En cmd:
+virtualenv nuevo-entorno // nuevo-entorno se puede cambiar por cualquier nombre
+virtualenv nuevo-entorno/bin/activate // activamos el entorno virtual
+
+En pycharm:
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
