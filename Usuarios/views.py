@@ -15,72 +15,75 @@ from Ingredientes.models import IngredientePicture
 from Recetas.models import Receta
 from Recetas.models import RecetaPicture
 
+
 # Create your views here.
 
 def inicio_sesion(request):
-  if request.POST:
-    username = request.POST.get('usuario')
-    password = request.POST.get('password')
+    if request.POST:
+        username = request.POST.get('usuario')
+        password = request.POST.get('password')
 
-    user = authenticate(username=username, password=password)
+        user = authenticate(username=username, password=password)
 
-    if user is not None:
-      login(request, user)
+        if user is not None:
+            login(request, user)
 
-      usuario = Usuarios.objects.get(User=user)
+            usuario = Usuarios.objects.get(User=user)
 
-      return HttpResponseRedirect(reverse('usuarios:perfil', kwargs={'usuario_id': usuario.id}))
+            return HttpResponseRedirect(reverse('usuarios:perfil', kwargs={'usuario_id': usuario.id}))
 
-  logout(request)
+    logout(request)
 
-  return render(request, 'Usuarios/UsuariosLanding.html', {})
+    return render(request, 'Usuarios/UsuariosLanding.html', {})
 
 
 def perfil_usuario(request, usuario_id):
-  usuario = Usuarios.objects.get(pk=usuario_id)
-  imagen = ProfilePicture.objects.filter(Usuario_id=usuario_id).first()
+    usuario = Usuarios.objects.get(pk=usuario_id)
+    imagen = ProfilePicture.objects.filter(Usuario_id=usuario_id).first()
 
-  ingredientes = Ingrediente.objects.filter(Usuario=usuario)[:3]
-  ingredients_list = []
-  for ingrediente in ingredientes:
-    imagen = IngredientePicture.objects.get(ingrediente=ingrediente)
-    ingredients_list.append((ingrediente, imagen))
+    ingredientes = Ingrediente.objects.filter(Usuario=usuario)[:3]
+    ingredients_list = []
+    for ingrediente in ingredientes:
+        imagen = IngredientePicture.objects.get(ingrediente=ingrediente)
+        ingredients_list.append((ingrediente, imagen))
 
-  recetas = Receta.objects.filter(Usuario=usuario)[:3]
-  recetas_list = []
-  for receta in recetas:
-    imagen = RecetaPicture.objects.get(Receta=receta)
-    recetas_list.append((receta, imagen))
+    recetas = Receta.objects.filter(Usuario=usuario)[:3]
+    recetas_list = []
+    for receta in recetas:
+        imagen = RecetaPicture.objects.get(Receta=receta)
+        recetas_list.append((receta, imagen))
 
-
-  return render(request, 'Usuarios/Perfil.html', {'usuario': usuario, 'imagen': imagen, 'ingredientes': ingredients_list, 'recetas': recetas_list})
-
+    return render(request, 'Usuarios/Perfil.html',
+                  {'usuario': usuario, 'imagen': imagen, 'ingredientes': ingredients_list, 'recetas': recetas_list})
 
 
 def registrar_usuario(request):
-  if request.POST:
-    form = RegistroUsuarioForm(request.POST, request.FILES)
+    if request.POST:
+        form = RegistroUsuarioForm(request.POST, request.FILES)
 
-    if form.is_valid():
-      new_user = form.save()
-      new_user = authenticate(username=form.cleaned_data['username'], password=form.cleaned_data['password'])
-      login(request, new_user)
+        if form.is_valid():
+            new_user = form.save()
+            new_user = authenticate(username=form.cleaned_data['username'], password=form.cleaned_data['password'])
+            login(request, new_user)
 
-      usuario = Usuarios.objects.get(User=new_user)
+            usuario = Usuarios.objects.get(User=new_user)
 
-    return HttpResponseRedirect(reverse('usuarios:perfil', kwargs={'usuario_id': usuario.id}))
+        return HttpResponseRedirect(reverse('usuarios:perfil', kwargs={'usuario_id': usuario.id}))
 
-  form = RegistroUsuarioForm()
+    form = RegistroUsuarioForm()
 
-  return render(request, 'Usuarios/Registro.html', {'register_form': form})
+    return render(request, 'Usuarios/Registro.html', {'register_form': form})
+
 
 def cerrar_sesion(request):
+    logout(request)
 
-  logout(request)
-
-  return HttpResponseRedirect(reverse('usuarios:inicio'))
+    return HttpResponseRedirect(reverse('usuarios:inicio'))
 
 
 def menuPrincipalAdmin(request):
+    return render(request, 'Usuarios/loginFake.html')
 
-  return render(request, 'Usuarios/loginFake.html')
+
+def homeAdmin(request):
+    return render(request,'Menu/home.html')

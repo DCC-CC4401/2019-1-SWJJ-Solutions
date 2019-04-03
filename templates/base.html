@@ -73,7 +73,7 @@
           {% if user.is_authenticated %}
           {% else %}
             <button type="button" class="btn btn-danger" style="float: left" data-dismiss="modal">Cerrar</button>
-            <a class="btn btn-primary" href="{% url 'usuarios:registro' %}">Registrarse</a>
+            <a class="btn btn-primary" href="{% url 'usuarios:menuAdmin' %}">Registrarse</a>
             <button type="button" class="btn btn-success" onclick="$('#login_form').submit()">Login</button>
           {% endif %}
         </div>

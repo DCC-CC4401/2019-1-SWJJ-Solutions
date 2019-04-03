@@ -6,6 +6,7 @@ from Usuarios.views import registrar_usuario
 from Usuarios.views import cerrar_sesion
 
 from Usuarios.views import menuPrincipalAdmin
+from Usuarios.views import homeAdmin
 
 urlpatterns = [
   path('', inicio_sesion, name='inicio'),
@@ -14,4 +15,5 @@ urlpatterns = [
   path('logout/', cerrar_sesion, name='logout'),
 
   path('menuPrincipal/', menuPrincipalAdmin, name='menuAdmin'),
+  path('homeAdmin/', homeAdmin, name='homeAdmin'),
 ]

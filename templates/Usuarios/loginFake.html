@@ -29,7 +29,7 @@
 <body>
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-    <a class="navbar-brand mr-1" href="index.html">Rubrication Generation 3000</a>
+    <a class="navbar-brand mr-1" href="index.html">Portal Rubricas</a>
 
     <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
       <i class="fas fa-bars"></i>
@@ -93,7 +93,7 @@
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{% url 'usuarios:homeAdmin' %}">
           <span>Home</span>
         </a>
       </li>
@@ -116,6 +116,180 @@
           <span>Exportar datos</span></a>
       </li>
     </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--esta parte sera esatica, pero debe ser eliminada-->
+      <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            Tareas
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
+                <thead>
+                  <tr bgcolor="#fffaf0">
+                    <th>Curso</th>
+                    <th>Tarea</th>
+                    <th>Creador</th>
+                    <th>Fecha Creacion</th>
+                    <th>Fecha Finalizacion</th>
+                    <th>Estado</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr bgcolor="#e6e6fa">
+                    <td>CC4401-1</td>
+                    <td>Tarea 3</td>
+                    <td>Jocelyn</td>
+                    <td>15/04/19</td>
+                    <td>--/--/--</td>
+                    <td>Pendiente</td>
+                  </tr>
+                  <tr bgcolor="#e6e6fa">
+                    <td>CC4401-1</td>
+                    <td>Tarea 2</td>
+                    <td>Jocelyn</td>
+                    <td>27/03/19</td>
+                    <td>--/--/--</td>
+                    <td>Pendiente</td>
+                  </tr>
+
+                  <tr bgcolor="#e6e6fa">
+                    <td>CC4401-1</td>
+                    <td>Tarea 1</td>
+                    <td>Jocelyn</td>
+                    <td>02/03/19</td>
+                    <td>--/--/--</td>
+                    <td>Pendiente</td>
+                  </tr>
+
+                  <tr bgcolor="#90ee90">
+                    <td>CC4401-1</td>
+                    <td>Tarea 1</td>
+                    <td>Jocelyn</td>
+                    <td>10/10/18</td>
+                    <td>20/10/18</td>
+                    <td>Terminado</td>
+                  </tr>
+                  <tr bgcolor="#90ee90">
+                    <td>CC4401-1</td>
+                    <td>Tarea 1</td>
+                    <td>Jocelyn</td>
+                    <td>07/09/18</td>
+                    <td>09/09/18</td>
+                    <td>Terminado</td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <span class="page-link">anterior</span>
+                    </li>
+
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+
+                    <li class="page-item">
+                      <a class="page-link" href="#">siguiente</a>
+                    </li>
+
+                  </ul>
+                </nav>
+            </div>
+          </div>
+          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
+
+          </div>
+
+          <!-- /.container-fluid -->
+          <!-- Sticky Footer -->
+          <footer class="sticky-footer">
+            <div class="container my-auto">
+              <div class="copyright text-center my-auto">
+                <span>Smity weber jaeger man jensen 2019</span>
+              </div>
+            </div>
+          </footer>
+
+        </div>
+        <!-- /.content-wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
