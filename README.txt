@@ -1,4 +1,4 @@
-Instrucciones para ejecutar.
+pipInstrucciones para ejecutar.
 
 Nota: Se sugiere fuertemente crear un ambiente virtual para ejecutar el proyecto.
 
