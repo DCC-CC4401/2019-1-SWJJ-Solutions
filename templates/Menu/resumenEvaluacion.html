@@ -1,0 +1,210 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}{% endblock %}</title>
+
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="{% static 'bootstrap-4.1.3/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap-4.1.3/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'fontawesome-free-5.5.0/css/all.min.css' %}">
+    <script src="{% static 'fontawesome-free-5.5.0/js/fontawesome.min.js' %}"></script>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    {% block extracss %} {% endblock extracss %}
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+ <div class="container-fluid">
+
+
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            Tareas
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
+                <thead>
+                  <tr bgcolor="#fffaf0">
+                    <th>Grupo</th>
+                    <th>Curso</th>
+                    <th>Profesor</th>
+                    <th>Tarea</th>
+                    <th>Fecha evaluacion</th>
+                    <th>Nota</th>
+                    <th>Rubrica</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr bgcolor="#e6e6fa">
+                    <td>Team 7</td>
+                    <td>CC4401-1</td>
+                    <td>Jocelyn</td>
+                    <td>Tarea 3</td>
+                    <td>15/04/19</td>
+                    <td>6.8</td>
+                    <td align="center"><button type="button" class="btn btn-success" onclick="mostrarRubrica()">Ver rubrica</button></td>
+                  </tr>
+
+                  <tr bgcolor="#e6e6fa">
+                    <td>Team 7</td>
+                    <td>CC4401-1</td>
+                    <td>Jocelyn</td>
+                    <td>Tarea 2</td>
+                    <td>01/02/19</td>
+                    <td>7.0</td>
+                    <td align="center"><button type="button" class="btn btn-success" onclick="mostrarRubrica()">Ver rubrica</button></td>
+                  </tr>
+
+                  <tr bgcolor="#e6e6fa">
+                    <td>Team 7</td>
+                    <td>CC4401-1</td>
+                    <td>Jocelyn</td>
+                    <td>Tarea 1</td>
+                    <td>09/03/19</td>
+                    <td>7.0</td>
+                    <td align="center"><button type="button" class="btn btn-success" onclick="mostrarRubrica()">Ver rubrica</button></td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+            </div>
+          </div>
+          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
+
+          </div>
+
+        <div id="divRubrica">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    function mostrarRubrica() {
+        document.getElementById("divRubrica").innerHTML="<div class=\"container-fluid\">"+
+        "<div class=\"card mb-3\">"+
+          "<div class=\"card-header\">"+
+            "<i class=\"fas fa-table\"></i>"+
+            "Tarea X"+
+          "</div>"+
+          "<div class=\"card-body\">"+
+            "<div class=\"table-responsive\">"+
+              "<table class=\"table table-bordered\" id=\"dataTable\" width=\"100%\" cellspacing=\"0\">"+
+                "<thead>"+
+                  "<tr bgcolor=\"#fffaf0\">"+
+                    "<th> </th>"+
+                    "<th>0.0</th>"+
+                    "<th>0.3</th>"+
+                    "<th>0.7</th>"+
+                    "<th>0.1</th>"+
+                  "</tr>"+
+                "</thead>"+
+
+                "<tbody>"+
+                  "<tr>"+
+                    "<td>modelo de datos</td>"+
+                    "<td>malo</td>"+
+                    "<td>medio malo</td>"+
+                    "<td bgcolor=\"#e6e6fa\">medio bueno</td>"+
+                    "<td bgcolor=\"#90ee90\">bueno</td>"+
+                  "</tr>"+
+
+                  "<tr>"+
+                    "<td>completitud</td>"+
+                    "<td>malo</td>"+
+                    "<td bgcolor=\"#e6e6fa\">medio malo</td>"+
+                    "<td>medio bueno</td>"+
+                    "<td bgcolor=\"#90ee90\">bueno</td>"+
+                  "</tr>"+
+
+                   "<tr>"+
+                    "<td>Demo</td>"+
+                    "<td >malo</td>"+
+                    "<td>medio malo</td>"+
+                    "<td bgcolor=\"#90ee90\">medio bueno</td>"+
+                    "<td>bueno</td>"+
+                  "</tr>"+
+
+                  "<tr>"+
+                    "<td>Organizacion</td>"+
+                    "<td bgcolor=\"#90ee90\">malo</td>"+
+                    "<td>medio malo</td>"+
+                    "<td bgcolor=\"#e6e6fa\">medio bueno</td>"+
+                    "<td bgcolor=\"#90ee90\">bueno</td>"+
+                  "</tr>"+
+
+                  "<tr>"+
+                    "<td>Forma</td>"+
+                    "<td bgcolor=\"#90ee90\">malo</td>"+
+                    "<td bgcolor=\"#e6e6fa\">medio malo</td>"+
+                    "<td>medio bueno</td>"+
+                    "<td bgcolor=\"#90ee90\">bueno</td>"+
+                  "</tr>"+
+                "</tbody>"+
+
+              "</table>"+
+
+            "</div>"+
+          "</div>"+
+          "<div class=\"card-footer small text-muted\">Updated yesterday at 11:59 PM</div>"+
+        "</div>"+
+
+          "</div>"
+    }
+</script>
+
+</html>
+

@@ -87,3 +87,8 @@ def menuPrincipalAdmin(request):
 
 def homeAdmin(request):
     return render(request,'Menu/home.html')
+
+def resumenEvaluacion(request):
+    return render(request,'Menu/resumenEvaluacion.html')
+
+

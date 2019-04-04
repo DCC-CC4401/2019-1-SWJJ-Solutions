@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
     {% block extracss %} {% endblock extracss %}
+
+
 </head>
 
 <body>
@@ -111,10 +113,15 @@
         <a class="nav-link" href="charts.html">
           <span>Evaluaciones</span></a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="tables.html">
+      <li class="nav-item">
+        <a class="nav-link" href="caca.html">
           <span>Exportar datos</span></a>
       </li>
+      <li class="nav-item">
+           <a class="nav-link" href="{% url 'usuarios:resumenEvaluacion' %}">
+          <span>Resumen evaluación</span></a>
+      </li>
+
     </ul>
 
 
@@ -149,7 +156,7 @@
 
 
 
-      <!--esta parte sera esatica, pero debe ser eliminada-->
+     <!--esta parte sera esatica, pero debe ser eliminada-->
       <div id="content-wrapper">
 
       <div class="container-fluid">
@@ -336,6 +343,9 @@
 
   <!-- Demo scripts for this page-->
   <script src="js/demo/datatables-demo.js"></script>
+
+
+
 
 </body>
 
