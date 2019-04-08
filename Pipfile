@@ -9,6 +9,7 @@ verify_ssl = true
 xlrd = "*"
 xlsxwriter = "*"
 django = "*"
+requests = "*"
 
 [requires]
 python_version = "3.6"

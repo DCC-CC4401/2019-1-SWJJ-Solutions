@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
+    <title>Hello, world!</title>
+  </head>
+  <body>
+        <form name="simpleForm" method="post">
+            <fieldset>
+                <table class="table table-sm" id="table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>Criterio</th><th>Descripción y Puntaje Asociado</th><th></th><th></th><th></th><th></th>
+                    </tr>
+                    </thead>
+                    <tr id="1">
+                    <td><input type="text" name="name0"></td>
+                    <th scope="col"><p><input type="text"></p>
+                    <select name="criterio2" class="combobox">
+                                <option>0.0</option>
+                                <option>0.1</option>
+                                <option>0.2</option>
+                                <option>0.3</option>
+                                <option>0.4</option>
+                                <option>0.5</option>
+                                <option>0.6</option>        
+                                <option>0.7</option>
+                                <option>0.8</option>
+                                <option>0.9</option>
+                                <option>1.0</option>                    
+                                </select></th>
+                    <th scope="col"><button onclick="addCol('table',1);return false;" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Agregar criterio</a></th>        
+                    </tr>    
+
+                    <tr id="2">
+                        <td><input type="text" name="name0"></td>
+                        <!--<td><input type="text" name="sub0" id="sub0" disabled></td>-->
+                        <th scope="col"><p><input type="text"></p><select name="criterio2" class="combobox">
+                                <option>0.0</option>
+                                <option>0.1</option>
+                                <option>0.2</option>
+                                <option>0.3</option>
+                                <option>0.4</option>
+                                <option>0.5</option>
+                                <option>0.6</option>        
+                                <option>0.7</option>
+                                <option>0.8</option>
+                                <option>0.9</option>
+                                <option>1.0</option>                    
+                                </select></th>
+                        <th scope="col"><button onclick="addCol('table',2);return false;" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Agregar criterio</a></th>  
+                    </tr>
+                    <tr id="3"><td><input type="text" name="name0"></td>
+                        <!--<td><input type="text" name="sub0" id="sub0" disabled></td>-->
+                        <th scope="col"><p><input type="text"></p><select name="criterio2" class="combobox">
+                                <option>0.0</option>
+                                <option>0.1</option>
+                                <option>0.2</option>
+                                <option>0.3</option>
+                                <option>0.4</option>
+                                <option>0.5</option>
+                                <option>0.6</option>        
+                                <option>0.7</option>
+                                <option>0.8</option>
+                                <option>0.9</option>
+                                <option>1.0</option>                    
+                                </select></th>
+                        <th scope="col"><button onclick="addCol('table',3);return false" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Agregar criterio</a></th>  
+                    </tr>
+                    <tr id="4"><td><input type="text" name="name0"></td>
+                        <!--<td><input type="text" name="sub0" id="sub0" disabled></td>-->
+                        <th scope="col"><p><input type="text"></p><select name="criterio2" class="combobox">
+                                <option>0.0</option>
+                                <option>0.1</option>
+                                <option>0.2</option>
+                                <option>0.3</option>
+                                <option>0.4</option>
+                                <option>0.5</option>
+                                <option>0.6</option>        
+                                <option>0.7</option>
+                                <option>0.8</option>
+                                <option>0.9</option>
+                                <option>1.0</option>                    
+                                </select></th>
+                        <th scope="col"><button onclick="addCol('table',4);return false;" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Agregar criterio</a></th>  
+                    </tr>
+                    <tr id="5"><td><input type="text" name="name0"></td>
+                        <!--<td><input type="text" name="sub0" id="sub0" disabled></td>-->
+                        <th scope="col"><p><input type="text"></p><select name="criterio2" class="combobox">
+                                <option>0.0</option>
+                                <option>0.1</option>
+                                <option>0.2</option>
+                                <option>0.3</option>
+                                <option>0.4</option>
+                                <option>0.5</option>
+                                <option>0.6</option>        
+                                <option>0.7</option>
+                                <option>0.8</option>
+                                <option>0.9</option>
+                                <option>1.0</option>                    
+                                </select></th>
+                        <th scope="col"><button onclick="addCol('table',5);return false;" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Agregar criterio</a></th>  
+                    </tr>
+                    <tr id="6"><td><input type="text" name="name0"></td>
+                        <!--<td><input type="text" name="sub0" id="sub0" disabled></td>-->
+                        <th scope="col"><p><input type="text"></p><select name="criterio2" class="combobox">
+                                <option>0.0</option>
+                                <option>0.1</option>
+                                <option>0.2</option>
+                                <option>0.3</option>
+                                <option>0.4</option>
+                                <option>0.5</option>
+                                <option>0.6</option>        
+                                <option>0.7</option>
+                                <option>0.8</option>
+                                <option>0.9</option>
+                                <option>1.0</option>                    
+                                </select></th>
+                        <th scope="col"><p><input type="text"></p><select name="criterio2" class="combobox">
+                                <option>0.0</option>
+                                <option>0.1</option>
+                                <option>0.2</option>
+                                <option>0.3</option>
+                                <option>0.4</option>
+                                <option>0.5</option>
+                                <option>0.6</option>        
+                                <option>0.7</option>
+                                <option>0.8</option>
+                                <option>0.9</option>
+                                <option>1.0</option>                    
+                                </select></th>
+                        <th scope="col"><button onclick="addCol('table',6);return false;" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Agregar criterio</a></th>  
+                    </tr>
+                </table>
+            <!-- <input type="submit" value="Enviar!"> -->
+            <button onclick="addRow();return false;" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Agregar criterio</a>
+            </button>
+            <button type = "submit" class ="btn btn-success">
+                    <i class="fas fa-check"></i> Enviar</a>
+            </button>
+            </fieldset>
+    </form>
+
+    <script>
+
+var contador = 4;
+
+function addCol(tbid,trid){
+    var Criterio = document.getElementById(tbid).tHead;
+    var NewCriterio = document.createElement('th');   
+    Criterio.rows[0].appendChild(NewCriterio);
+    var row = document.getElementById(trid);
+    var NewContent = row.insertCell(2);
+    NewContent.innerHTML =  '<p>'+'<input type="text">'+'</p>'+'<select name=criterio'+ contador +' class="combobox">'
+                        +'<option>0.0</option>'
+                        +'<option>0.1</option>'
+                        +'<option>0.2</option>'
+                        +'<option>0.3</option>'
+                        +'<option>0.4</option>'
+                        +'<option>0.5</option>'
+                        +'<option>0.6</option>'     
+                        +'<option>0.7</option>'
+                        +'<option>0.8</option>'
+                        +'<option>0.9</option>'
+                        +'<option>1.0</option>'                 
+                        +'</select>'
+                    }
+var n = 0;
+function addRow(){
+//  console.clear();
+    ++n;
+    let newRow = '<tr id="item' + n + '"><td><input type="text" name="name' + n + '"></td></tr>';
+//  console.log(newRow);
+    table.insertAdjacentHTML('beforeend', newRow);
+}
+function updateTot(val){
+//  console.log(val);
+    let cant = document.getElementById(`cant${val}`);
+    let prec = document.getElementById(`prec${val}`);
+    let mult = +cant.value * +prec.value;
+//  console.log(mult);
+    let sub = document.getElementById(`sub${val}`);
+    sub.value = mult;
+    total.value = +total.value + mult;  
+}
+function checkClientName(){
+    let text = document.forms[0]["clientName"].value
+//  console.log(text);
+    if (text != "" && !text.match(/^[a-z]+$/i))
+        errorAlpha.style.visibility = "visible";
+    else
+        errorAlpha.style.visibility = "hidden";
+    if (text.length <= 3)
+        errorShort.style.visibility = "visible";
+    else
+        errorShort.style.visibility = "hidden";
+}
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
