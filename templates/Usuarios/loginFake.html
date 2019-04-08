@@ -104,8 +104,8 @@
           <span>Rubricas</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="login.html">Generar rubricas</a>
-          <a class="dropdown-item" href="register.html">Ver rubricas</a>
+          <a class="dropdown-item" href="{% url 'usuarios:generadorDeRubrica' %}">Generar rubricas</a>
+          <a class="dropdown-item" href="{% url 'usuarios:eval' %}">Ver rubricas</a>
           <div class="dropdown-divider"></div>
         </div>
       </li>

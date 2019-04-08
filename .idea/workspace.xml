@@ -5,7 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Usuarios/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Usuarios/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Usuarios/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Usuarios/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Menu/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Menu/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Menu/eval.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Menu/eval.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Menu/generadorDeRubrica.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Menu/generadorDeRubrica.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Usuarios/loginFake.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Usuarios/loginFake.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Usuarios/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            <state relative-caret-position="180">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="45" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -46,10 +47,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Usuarios/loginFake.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="106" column="76" selection-start-line="106" selection-start-column="76" selection-end-line="106" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Menu/eval.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3105">
+              <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Menu/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Menu/generadorDeRubrica.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="231" column="13" selection-start-line="231" selection-start-column="13" selection-end-line="231" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/Menu/rubrica.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Usuarios/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="322">
+              <caret line="96" column="55" selection-start-line="96" selection-start-column="55" selection-end-line="96" selection-end-column="55" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -58,28 +104,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Usuarios/loginFake.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="220" column="39" selection-start-line="220" selection-start-column="22" selection-end-line="220" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Menu/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="81" column="39" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Menu/resumenEvaluacion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="88" column="37" lean-forward="true" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
+            <state relative-caret-position="375">
+              <caret line="25" column="48" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="25" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -107,9 +135,11 @@
       <find>2</find>
       <find>login</find>
       <find>home</find>
-      <find>resumen</find>
       <find>$</find>
       <find>tareas</find>
+      <find>resumen</find>
+      <find>rubrica</find>
+      <find>genera</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,14 +150,16 @@
       <list>
         <option value="$PROJECT_DIR$/templates/loginFake.html" />
         <option value="$PROJECT_DIR$/DemoRecetas/urls.py" />
-        <option value="$PROJECT_DIR$/templates/Menu/rubrica.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/Menu/home.html" />
         <option value="$PROJECT_DIR$/templates/Menu/landingAdministrador.html" />
-        <option value="$PROJECT_DIR$/templates/Usuarios/loginFake.html" />
-        <option value="$PROJECT_DIR$/Usuarios/views.py" />
-        <option value="$PROJECT_DIR$/Usuarios/urls.py" />
         <option value="$PROJECT_DIR$/templates/Menu/resumenEvaluacion.html" />
+        <option value="$PROJECT_DIR$/Usuarios/urls.py" />
+        <option value="$PROJECT_DIR$/Usuarios/views.py" />
+        <option value="$PROJECT_DIR$/templates/Usuarios/loginFake.html" />
+        <option value="$PROJECT_DIR$/templates/Menu/eval.html" />
+        <option value="$PROJECT_DIR$/templates/Menu/generadorDeRubrica.html" />
+        <option value="$PROJECT_DIR$/templates/Menu/rubrica.html" />
       </list>
     </option>
   </component>
@@ -145,46 +177,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="DemoRecetas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DemoRecetas" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-1-SWJJ-Solutions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2019-1-SWJJ-Solutions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DemoRecetas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DemoRecetas" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DemoRecetas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DemoRecetas" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="fontawesome-free-5.5.0" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DemoRecetas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DemoRecetas" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-1-SWJJ-Solutions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2019-1-SWJJ-Solutions" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DemoRecetas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DemoRecetas" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-1-SWJJ-Solutions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2019-1-SWJJ-Solutions" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="Menu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DemoRecetas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DemoRecetas" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="Usuarios" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,17 +270,18 @@
       <workItem from="1554387275460" duration="1604000" />
       <workItem from="1554393639789" duration="1885000" />
       <workItem from="1554401613158" duration="1023000" />
+      <workItem from="1554682659262" duration="3707000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30671000" />
+    <option name="totallyTimeSpent" value="34378000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23703113" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17318435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -279,7 +295,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.31758958" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.48859936" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -376,13 +392,6 @@
     <entry file="file://$PROJECT_DIR$/Usuarios/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Menu/rubrica.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
@@ -391,44 +400,72 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Menu/landingAdministrador.html" />
-    <entry file="file://$PROJECT_DIR$/Usuarios/urls.py">
+    <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Usuarios/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="322">
+          <caret line="96" column="55" selection-start-line="96" selection-start-column="55" selection-end-line="96" selection-end-column="55" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Menu/home.html">
+    <entry file="file://$PROJECT_DIR$/templates/Menu/resumenEvaluacion.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="81" column="39" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="39" />
+        <state relative-caret-position="375">
+          <caret line="25" column="48" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="25" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Usuarios/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Usuarios/loginFake.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="220" column="39" selection-start-line="220" selection-start-column="22" selection-end-line="220" selection-end-column="39" />
+        <state relative-caret-position="167">
+          <caret line="106" column="76" selection-start-line="106" selection-start-column="76" selection-end-line="106" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Menu/resumenEvaluacion.html">
+    <entry file="file://$PROJECT_DIR$/templates/Menu/generadorDeRubrica.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="88" column="37" lean-forward="true" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
+        <state relative-caret-position="502">
+          <caret line="231" column="13" selection-start-line="231" selection-start-column="13" selection-end-line="231" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Menu/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Menu/eval.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3105">
+          <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Menu/rubrica.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>

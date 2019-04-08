@@ -91,4 +91,7 @@ def homeAdmin(request):
 def resumenEvaluacion(request):
     return render(request,'Menu/resumenEvaluacion.html')
 
-
+def eval(request):
+    return render(request,'Menu/eval.html')
+def generadorDeRubrica(request):
+    return render(request,'Menu/generadorDeRubrica.html')
