@@ -11,6 +11,8 @@ from Usuarios.views import resumenEvaluacion
 
 from Usuarios.views import eval
 from Usuarios.views import generadorDeRubrica
+from Usuarios.views import evaluaciones
+
 urlpatterns = [
   path('', inicio_sesion, name='inicio'),
   path('registro', registrar_usuario, name='registro'),
@@ -22,5 +24,5 @@ urlpatterns = [
   path('resumenEvaluacion/', resumenEvaluacion, name='resumenEvaluacion'),
   path('eval/', eval, name='eval'),
   path('generadorDeRubrica/', generadorDeRubrica, name='generadorDeRubrica'),
-
+  path('evaluaciones/', evaluaciones, name='evaluaciones')
 ]

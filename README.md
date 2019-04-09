@@ -1,4 +1,4 @@
-# Smitty Werberjagermanjensen's Project
+# Smitty Werbenjagermanjensen's Project
 
 Description
 (Change title?)
@@ -41,16 +41,17 @@ Next, run the following commands to configure Django:
 
 ```
 pip install -r requirements.txt
-python3 manage.py makemigrations
-python3 manage.py migrate
-python3 manage.py runserver
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
 ```
 
-(You can exit Pipenv's shell using `exit` or by pressing Ctrl + D).
+(You can exit Pipenv's shell using `exit` or by pressing Ctrl + D.Also, remember to replace `python`
+with whichever command matching the version you're using). 
 
 From now on, you just need the following command to start this project's local server:
 
-``` pipenv run python3 manage.py runserver```
+``` pipenv run python manage.py runserver```
 
 
 ## Developed With

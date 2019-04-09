@@ -93,5 +93,9 @@ def resumenEvaluacion(request):
 
 def eval(request):
     return render(request,'Menu/eval.html')
+
 def generadorDeRubrica(request):
     return render(request,'Menu/generadorDeRubrica.html')
+
+def evaluaciones(request):
+    return render(request,'Menu/evaluaciones.html')
