@@ -99,3 +99,6 @@ def generadorDeRubrica(request):
 
 def evaluaciones(request):
     return render(request,'Menu/evaluaciones.html')
+
+def evaluaEvaluador(request):
+    return render(request,'Menu/evaluaEvaluador.html')

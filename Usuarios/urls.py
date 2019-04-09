@@ -25,4 +25,5 @@ urlpatterns = [
   path('eval/', eval, name='eval'),
   path('generadorDeRubrica/', generadorDeRubrica, name='generadorDeRubrica'),
   path('evaluaciones/', evaluaciones, name='evaluaciones')
+
 ]
